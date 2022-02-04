@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+.header {
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    padding: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.connect {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.connect button {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #2A354F;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #2A354F;
+    border-radius: 5px;
+}
+
+.connect button:hover {
+
+color: white;
+background-color: #388BAE;
+border: 2px solid #388BAE;
+transition: 0.3s ease-out;
+transform: scale(1.1); 
+cursor: pointer;
+}
+
+.media-info {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+
+    
+}
+
+.phones {
+padding: 5px;
+width: 30%;
+}
+
+#ph-1 a, #ph-2 a {
+    color: #2A354F;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+#ph-2:hover, #ph-1:hover {
+    transform: scale(1.1); 
+    transition: 0.3s ease-in all; 
+}
+
+.social-media {
+ display: flex;
+ align-content: space-around;
+  padding: 5px;
+  width: 25%;
+}
+
+.social-media div {
+    margin: 5px;
+    padding: 7px;
+}
+
+.fa-instagram:hover {
+    cursor: pointer;
+    color: #833AB4;
+    transition: 0.2s ease-in all;
+    transform: scale(1.2);
+}
+
+.fa-facebook:hover {
+    cursor: pointer;
+    color: #3b5998;
+    transition: 0.2s ease-in all;
+    transform: scale(1.2);
+}
+.fa-whatsapp:hover {
+    cursor: pointer;
+    color: #128c7e;
+    transition: 0.2s ease-in all;
+    transform: scale(1.2);
+}
+
+
+
+.navigation {
+    background-color: 
+    #2A354F;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+.navigation .nav-list {
+    display: inline-flex;
+    float: left;
+    margin: 8px;
+}
+
+
+
+.navigation ul li a {
+    
+    display: inline-block;
+    font-size: 28px;
+    padding: 15px 15px;
+    margin: 2px;
+    color: white;
+    
+}
+
+.nav-list li a i {
+    padding: 5px;
+    margin: 5px;
+}
+.navigation ul li a:hover {
+    background-color: #388BAE;
+    border-radius: 3px;
+    transition: 0.2s ease-in all;
+    
+
+}
+.catalogue {
+    display: none;
+   
+}
+
+.navigation ul li:hover .catalogue {
+    display: block;
+    position: absolute;
+    background-color: #2A354F;
+}
