@@ -38,11 +38,31 @@ a {
     justify-content: flex-start;
 }
 
+.logo img:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.1);
+}
+
 .connect {
     width: 30%;
     display: flex;
     justify-content: center;
 }
+
+.brand-name {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.brand-name h1 {
+    font-family: 'Didot';
+    font-size: 60px;
+    color: #398BAC;
+    font-weight: bold;
+}
+
+
 
 .connect button {
     font-size: 1.3rem;
@@ -53,13 +73,20 @@ a {
     background-color: white;
     border: 2px solid #2A354F;
     border-radius: 5px;
+   
+}
+
+.connect a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .connect button:hover {
 
-color: white;
+color: #D2D3CF;
 background-color: #388BAE;
-border: 2px solid #388BAE;
+border: 3px solid #388BAE;
 transition: 0.3s ease-out;
 transform: scale(1.1); 
 cursor: pointer;
@@ -76,7 +103,7 @@ cursor: pointer;
 
 .phones {
 padding: 5px;
-width: 30%;
+width: 40%;
 }
 
 #ph-1 a, #ph-2 a {
@@ -131,6 +158,8 @@ width: 30%;
     width: 100%;
     height: 90px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation .nav-list {
@@ -139,6 +168,65 @@ width: 30%;
     margin: 8px;
 }
 
+#search-bar {
+    width: 40%;
+    display: flex;
+align-items: center;
+justify-content: center;
+    
+}
+
+#search-bar input {
+    width: 60%;
+    height: 40%;
+    margin: 10px;
+    margin-left: 0px;
+    padding: 5px;
+    border: 2px solid #2A354F;
+    
+}
+
+#search-bar button {
+    width: 15%;
+    height: 40%;
+    margin: 10px;
+    padding: 5px;
+    
+    border: 2px solid #2A354F;
+border-radius: 3px;
+    color: #2A354F;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+#search-bar button:hover {
+    color: #D2D3CF;
+background-color: #388BAE;
+border: 3px solid #388BAE;
+transition: 0.3s ease-out;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#search-bar div {
+    height: 35%;
+    width: 5%;
+    background-color: white;
+    display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 0px;
+}
+
+#search-bar div i:hover {
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    transform: scale(1.2);
+}
+
+.fas .fa-search {
+    color: white;
+}
 
 
 .navigation ul li a {
@@ -164,6 +252,9 @@ width: 30%;
 }
 .catalogue {
     display: none;
+    text-align: left;
+   
+    
    
 }
 
@@ -171,4 +262,117 @@ width: 30%;
     display: block;
     position: absolute;
     background-color: #2A354F;
+    z-index: 2;
+    
+}
+
+.navigation ul li .catalogue li a {
+    width: 99%;
+}
+
+.jumbotron {
+    width: 100%;
+height: 750px;
+  margin: 5px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+.cover-photo img {
+    width: 100%;
+
+}
+
+
+/*.cover-photo  {
+    background: url('images/262799773_107035708486894_7457413100493419853_n.jpeg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    
+    margin: 15px;
+    margin-top: 15px;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+    z-index: -1;
+}
+*/
+
+
+/*.free {
+    width: 15%;
+    height: 15%;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: solid 1px #2A354F;
+    border-radius: 7px;
+    background-color: #2A354F;
+    z-index: 4;
+    opacity: 1;
+}
+
+.free h2 {
+    font-size: 1.4rem;
+    color: #D2D3CF;
+
+}
+
+*/
+
+.main {
+
+}
+
+#title-about {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+}
+
+#title-about h1 {
+    font-size: 3rem;
+    color: #2A354F;
+}
+
+#array {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.description {
+font-size: 2rem;
+color: #2A354F;
+}
+
+.number {
+    margin: 5px;
+    padding: 5px;
+    font-size: 2rem;
+    border: solid 2px #2A354F;
+    border-radius: 50%;
+    color: #2A354F;
 }
