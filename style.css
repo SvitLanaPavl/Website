@@ -67,12 +67,15 @@ a {
 .connect button {
     font-size: 1.3rem;
     font-weight: bolder;
-    color: #2A354F;
+    
     margin: 10px;
     padding: 10px;
+    color: #388BAE;
+    font-size: 1.2rem;
+    border: 1px solid #388BAE;
+    font-weight: bold;
     background-color: white;
-    border: 2px solid #2A354F;
-    border-radius: 5px;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
    
 }
 
@@ -84,11 +87,11 @@ a {
 
 .connect button:hover {
 
-color: #D2D3CF;
+color: white;
 background-color: #388BAE;
 border: 3px solid #388BAE;
 transition: 0.3s ease-out;
-transform: scale(1.1); 
+
 cursor: pointer;
 }
 
@@ -192,11 +195,12 @@ justify-content: center;
     margin: 10px;
     padding: 5px;
     
-    border: 2px solid #2A354F;
-border-radius: 3px;
-    color: #2A354F;
-    font-weight: bolder;
+    color: #388BAE;
     font-size: 1.2rem;
+    border: 1px solid #388BAE;
+    font-weight: bold;
+    
+    transition: all 0.3s ease-in-out;
 }
 
 #search-bar button:hover {
@@ -246,7 +250,7 @@ margin-right: 0px;
 .navigation ul li a:hover {
     background-color: #388BAE;
     border-radius: 3px;
-    transition: 0.2s ease-in all;
+    transition: 0.4s ease-in all;
     
 
 }
@@ -262,6 +266,7 @@ margin-right: 0px;
     display: block;
     position: absolute;
     background-color: #2A354F;
+    transition: 0.4s ease-in;
     z-index: 2;
     
 }
@@ -272,8 +277,8 @@ margin-right: 0px;
 
 .jumbotron {
     width: 100%;
-height: 750px;
-  margin: 5px;
+height: 960px;
+  margin: 0px;
   display: flex;
     justify-content: center;
     align-items: center;
@@ -283,12 +288,16 @@ height: 750px;
     width: 100%;
     height: 100%;
     margin-left: 0px;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
 }
 .cover-photo img {
     width: 100%;
+    opacity: 0.5;
+    background-color: black;
+    
 
 }
 
@@ -335,6 +344,11 @@ height: 750px;
 */
 
 .main {
+position: absolute;
+width: 80%;
+top: 800px;
+left: 70px;
+background-color: rgba(255, 255, 255, 0.5);
 
 }
 
@@ -346,12 +360,16 @@ height: 750px;
 
 #title-about h1 {
     font-size: 3rem;
-    color: #2A354F;
+    letter-spacing: 2px;
+    color: black;
+    font-family: 'Libre Baskerville';
 }
 
 #array {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -365,7 +383,10 @@ height: 750px;
 
 .description {
 font-size: 2rem;
-color: #2A354F;
+padding: 5px;
+margin: 5px;
+color: #6D4C3D;
+font-family: 'Libre Baskerville';
 }
 
 .number {
@@ -374,5 +395,64 @@ color: #2A354F;
     font-size: 2rem;
     border: solid 2px #2A354F;
     border-radius: 50%;
+    color: black;
+    font-family: 'Libre Baskerville';
+}
+
+.cover-photo #title {
+    position: absolute;
+    top: 300px;
+    left: 100px;
     color: #2A354F;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+text-align: center;
+
+display: flex;
+flex-direction: column;
+
+    
+}
+.cover-photo #title button {
+    width: 15%;
+    height: 40px;
+    position: absolute;
+    top: 185px;
+    right: 90px;
+    color: #388BAE;
+    font-size: 1.2rem;
+    border: 1px solid #388BAE;
+    font-weight: bold;
+    box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.5);
+    
+}
+
+.cover-photo #title button:hover {
+    background-color: #388BAE;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.cover-photo #title h1 {
+    font-size: 3.5rem;
+    padding: 10px;
+    font-family: 'Libre Baskerville';
+    letter-spacing: 2px;
+    
+  
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    
+}
+
+#specialist #production #delivery {
+    width: 30%;
 }
