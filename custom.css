@@ -1,0 +1,68 @@
+.custom-btn {
+    margin-top: 25px;
+}
+
+.custom-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+
+.crs-img {
+    position: absolute;
+    object-fit:cover;
+    width: 100%;
+    top: 0;
+    left: 0;
+    min-height: 560px;
+    background:rgba(0,0,0,0.6);
+    opacity: 0.7;
+    background-size: cover;
+   
+}
+
+.carousel-caption {
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+.f-btn {
+    margin-top: 20px;
+}
+.f-btn:hover {
+    opacity: 0.8;
+}
+
+
+.featurette-divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#stages {
+    margin-top: 50px;
+}
+
+.stage {
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.f-txt {
+text-align: justify;
+padding: 5px;
+}
+
+#contacts {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+#map iframe {
+    width: 400px;
+    height: 300px;
+}
+
