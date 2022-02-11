@@ -41,7 +41,7 @@ a {
 .brand-name h1 {
     font-family: 'Didot';
     font-size: 60px;
-    color: #398BAC;
+    color: #3498db;
     font-weight: bold;
 }
 
@@ -108,7 +108,7 @@ a {
 }
 
 #navigation ul li a:hover {
-    color: #398BAC;
+    color: #3498db;
     transition: 0.2s ease-in-out all;
     cursor: pointer;
 }
@@ -122,13 +122,13 @@ a {
 }
 
 #navigation .d-flex button {
-    color: #398BAC;
-    border: 1px solid #398BAC;
+    color: #3498db;
+    border: 1px solid #3498db;
 }
 
 #navigation .d-flex button:hover {
-    background-color: #398BAC;
-    color: white;
+    background-color: #3498db;
+    color: #fff;
 }
 
 #navigation ul li #navbarScrollingDropdown:hover .dropdown-menu {
@@ -164,7 +164,7 @@ justify-content: center;
 #search-bar div {
     height: 35%;
     width: 5%;
-    background-color: white;
+    background-color: #fff;
     display: flex;
 align-items: center;
 justify-content: center;
@@ -178,7 +178,7 @@ margin-right: 0px;
 }
 
 .fas .fa-search {
-    color: white;
+    color: #fff;
 }
 
 
@@ -187,7 +187,7 @@ margin-right: 0px;
     margin: 5px;
 }
 .navigation ul li a:hover {
-    background-color: #388BAE;
+    background-color: #3498db;
     border-radius: 3px;
     transition: 0.4s ease-in all;
     

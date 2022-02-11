@@ -3,8 +3,8 @@ inputFocus.addEventListener('mouseover', () => {
     inputFocus.focus();
 });
 
-let dropDown = document.getElementById('catalogue');
-dropDown.addEventListener('mouseover', () => {
-    dropDown.style.display = 'block';
+let inputFocus1 = document.getElementById('search-input1');
+inputFocus1.addEventListener('mouseover', () => {
+    inputFocus1.focus();
 });
-console.log();
+
