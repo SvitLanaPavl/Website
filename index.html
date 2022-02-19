@@ -26,27 +26,23 @@
 
     </head>
     <body id='main'>
-        
-            <div class='container'>
-                <div class='row'><div class='col-md-1' class='logo' id='logo'>
-                    <a href='#'>
-                        <img src='images/logo.jpg' style='max-width: 80px;'>
+        <header  class="nav-sticky">
+            <div class='container-fluid'>
+                <div id='row' class='row'><div class='col-md-1' class='logo' id='logo'>
+                    <a href='index.html'>
+                        <img src='images/logo.jpg'>
                     </a>
             </div>
-            <div style='display: flex; justify-content: center; align-items: center; 
-            color: #3498db;
-            font-weight: bold;' class='col-md-6' class='brand-name'>
-                <h1 class="h1" style='font-size: 50px; font-family: Didot;'>Стеклострой</h1>
+            <div class='col-md-6' id='brand-name'>
+                <h1 class="h1">Стеклострой</h1>
             </div>
             
-                    <div class='col' class='phones' style='margin: 5px; padding: 5px;'>
+                    <div class='col' id='phones'>
                         <div id='ph-1'><a href='tel:+380673270887' style='text-decoration: none;'>+38(067)3270887</a></div>
                         
                         <div id='ph-2'><a href='tel:+380931513321' style='text-decoration: none;'>+38(093)1513321</a></div>
                     </div>
-                    <div class='col' class='container' class='social-media' style='display: flex;
-                    align-content: space-around;
-                     padding: 5px; justify-content: center; align-items: center;'>
+                    <div class='col' class='container' id='social-media'>
                         <a style='display: flex; justify-content: center; align-items: center; text-decoration: none;' class='col' href='https://www.instagram.com/steclo.stroy/' target='_blank'><i class="fab fa-2x fa-instagram"></i></a>
                         
                         <a style='display: flex; justify-content: center; align-items: center; text-decoration: none;' class='col' href='https://www.facebook.com/Glassbuildcompany/?notif_id=1643210239238903&notif_t=page_user_activity&ref=notif' target='_blank'><i class="fab fa-2x fa-facebook"></i></a>
@@ -57,9 +53,25 @@
                 
 
             </div>
-
+            <nav id="xs-hidden" class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+            </nav>
+            <div class="collapse" id="navbarToggleExternalContent3">
+              <div class="bg-light shadow-3 p-4">
+                <button class="btn btn-link btn-block border-bottom m-0">Главная</button>
+                <button class="btn btn-link btn-block border-bottom m-0">Каталог</button>
+                <button class="btn btn-link btn-block m-0">Контакты</button>
+              </div>
             </div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            </div>
+            
+            <nav id="nav-sticky" class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-md navbar-expand-sm navbar-expand-xs">
                 <div class="container-fluid">
                   
                   <div id='navigation' class="collapse navbar-collapse" id="navbarScroll">
@@ -72,26 +84,26 @@
                           Каталог
                         </a>
                         <ul class='dropdown-menu'>
-                          <li><a class="dropdown-item" href="shower-cabins.html">Душевые кабины</a></li>
-                          <li><a class="dropdown-item" href="room-partitions.html">Перегородки из стекла</a></li>
+                          <li><a class="dropdown-item" href="shower-cabins.html" target="'_blank">Душевые кабины</a></li>
+                          <li><a class="dropdown-item" href="room-partitions.html" target="'_blank">Перегородки из стекла</a></li>
                          
-                          <li><a class="dropdown-item" href="glass-doors.html">Стеклянные двери</a></li>
-                          <li><a class="dropdown-item" href="shower-partitions.html">Душевые перегородки</a></li>
-                          <li><a class="dropdown-item" href="glass-railings.html">Стеклянные перила</a></li>
+                          <li><a class="dropdown-item" href="glass-doors.html" target="'_blank">Стеклянные двери</a></li>
+                          <li><a class="dropdown-item" href="shower-partitions.html" target="'_blank">Душевые перегородки</a></li>
+                          <li><a class="dropdown-item" href="glass-railings.html" target="'_blank">Стеклянные перила</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
                         <a href="#contacts" class="nav-link">Контакты</a>
                       </li>
                     </ul>
-                    <form class="d-flex">
+                    <form id="search" class="d-flex">
                       <input id='search-input' class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Поиск</button>
                     </form>
                   </div>
                 </div>
               </nav>
-            
+            </header>   
               <main>
 
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -110,7 +122,7 @@
                         <div class="carousel-caption text-start">
                           <h1>Душевые кабины, стеклянные перегородки, стеклянные перила и ограждения</h1>
                          
-                          <p><a href="tel:+380673270887" target='_blank' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn" href="#">Сделать заказ</a></p>
+                          <p><a href="tel:+380673270887" target='_blank' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">Сделать заказ</a></p>
                         </div>
                       
                       </div>
@@ -123,7 +135,7 @@
                         <div class="carousel-caption">
                           <h1>Осуществляем полный цикл работ</h1>
                          
-                          <a href='#stages' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn" href="#">Детальнее</a></p>
+                          <a href='#stages' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">Детальнее</a></p>
                         </div>
                       </div>
                     </div>
@@ -135,7 +147,7 @@
                         <div class="carousel-caption text-end">
                           <h1>Индивидуальный подход. Эффективность. Знание. Умение. Стратегия. Инновации.</h1>
                   
-                          <a style='background-color: #3498db; color: #fff; border: #3498db;' class="btn btn-lg btn-primary custom-btn" href="gallery.html">Перейти к галлерее</a></p>
+                          <a style='background-color: #3498db; color: #fff; border: #3498db;' class="btn btn-lg btn-primary custom-btn" href="gallery.html" target="'_blank">Перейти к галлерее</a></p>
                         </div>
                       </div>
                     </div>
@@ -191,7 +203,7 @@
                     <div class="col-md-7 order-md-2">
                       <h2 class="featurette-heading">Душевые кабины</h2>
                       <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-                      <a href='gallery.html' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">К галерее</a></p>
+                      <a href='gallery.html' target="_blank" style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">К галерее</a></p>
                     </div>
                     
                     <div class="col-md-5 order-md-1">
@@ -206,7 +218,7 @@
                     <div class="col-md-7">
                       <h2 class="featurette-heading">Душевые перегородки</h2>
                       <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-                      <a href='gallery.html' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn" href="#">К галерее</a></p>
+                      <a href='gallery.html' target="_blank" style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">К галерее</a></p>
                     </div>
                     <div class="col-md-5">
                      <img src='images/душевые прегородки/shc1.jpg' <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="context-fill #eee"/><text x="50%" y="50%" fill="context-fill #aaa" dy=".3em"></text></svg>
@@ -222,7 +234,7 @@
                     <div class="col-md-7 order-md-2">
                       <h2 class="featurette-heading">Стеклянные перегородки</h2>
                       <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-                      <a href='gallery.html' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">К галерее</a></p>
+                      <a href='gallery.html' target="_blank" style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn">К галерее</a></p>
                     </div>
                     
                     <div class="col-md-5 order-md-1">
@@ -237,7 +249,7 @@
                     <div class="col-md-7">
                       <h2 class="featurette-heading">Стеклянные перила и ограждения</h2>
                       <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-                      <a href='gallery.html' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn" href="#">К галерее</a></p>
+                      <a href='gallery.html' style='background-color: #3498db; border: #3498db; color: #fff;' class="btn btn-lg btn-primary custom-btn" target="_blank">К галерее</a></p>
                     </div>
                     
                     <div class="col-md-5">
@@ -263,11 +275,22 @@
                     <p>Офис: </p>
                     <p>Склад готовой продукции: </p>
                     <p>Руслан</p>
-                  </div></div>
+                    <div class='col' class='container' id='social-media-footer'>
+                      <a class='col' href='https://www.instagram.com/steclo.stroy/' target='_blank'><i class="fab fa-2x fa-instagram"></i></a>
+                      
+                      <a class='col' href='https://www.facebook.com/Glassbuildcompany/?notif_id=1643210239238903&notif_t=page_user_activity&ref=notif' target='_blank'><i class="fab fa-2x fa-facebook"></i></a>
+  
+                      <a class='col' href="https://telegram.me/RuslanPavlovskyi" target='_blank'><i class="fab fa-2x fa-telegram"></i></a>
+  
+                  </div>
+                  </div>
+                  
+                </div>
+                  
                   <footer class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                       <li class="nav-item"><a href="#main" class="nav-link px-2 text-muted">Главная</a></li>
-                      <li class="nav-item"><a href="gallery.html" class="nav-link px-2 text-muted">Каталог</a></li>
+                      <li class="nav-item"><a href="gallery.html" target="_blank" class="nav-link px-2 text-muted">Каталог</a></li>
                       <li class="nav-item"><a href="#stages" class="nav-link px-2 text-muted">Цикл работы</a></li>
                       <li class="nav-item"><a href="#contacts" class="nav-link px-2 text-muted">Контакты</a></li>
                       
@@ -278,7 +301,7 @@
                 
               
               
-                  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+                 <!--<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>--> 
 
 
             
