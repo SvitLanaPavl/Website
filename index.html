@@ -27,21 +27,58 @@
     </head>
     <body id='main'>
         <header  class="nav-sticky">
-            <div class='container-fluid'>
+            <div id="mobile-nav" class='container-fluid'>
                 <div id='row' class='row'><div class='col-md-1' class='logo' id='logo'>
                     <a href='index.html'>
                         <img src='images/logo.jpg'>
                     </a>
             </div>
-            <div class='col-md-6' id='brand-name'>
-                <h1 class="h1">Стеклострой</h1>
+            <div class='col-md-4' id='brand-name'>
+                <div><h1 class="h1">Стеклострой</h1></div>
+                
             </div>
+            <div id="xs-hidden"  class="navbar navbar-light light-blue lighten-4">
+
+              <!-- Navbar brand -->
+              
+            
+              <!-- Collapse button -->
+              <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
+            
+              <!-- Collapsible content -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            
+                <!-- Links -->
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Каталог</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+                <!-- Links -->
+            
+              </div>
+              <!-- Collapsible content -->
+            
+            </div>
+            
+
+            
             
                     <div class='col' id='phones'>
                         <div id='ph-1'><a href='tel:+380673270887' style='text-decoration: none;'>+38(067)3270887</a></div>
                         
                         <div id='ph-2'><a href='tel:+380931513321' style='text-decoration: none;'>+38(093)1513321</a></div>
+                        
                     </div>
+
                     <div class='col' class='container' id='social-media'>
                         <a style='display: flex; justify-content: center; align-items: center; text-decoration: none;' class='col' href='https://www.instagram.com/steclo.stroy/' target='_blank'><i class="fab fa-2x fa-instagram"></i></a>
                         
@@ -49,28 +86,20 @@
 
                         <a style='display: flex; justify-content: center; align-items: center; text-decoration: none;' class='col' href="https://telegram.me/RuslanPavlovskyi" target='_blank'><i class="fab fa-2x fa-telegram"></i></a>
 
-                    </div>
+                  </div>
+
+                  
+                    
+                  
+
+                    
+                    
                 
 
             </div>
-            <nav id="xs-hidden" class="navbar navbar-light bg-light">
-              <div class="container-fluid">
-                <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
-                  data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars"></i>
-                </button>
-              </div>
-            </nav>
-            <div class="collapse" id="navbarToggleExternalContent3">
-              <div class="bg-light shadow-3 p-4">
-                <button class="btn btn-link btn-block border-bottom m-0">Главная</button>
-                <button class="btn btn-link btn-block border-bottom m-0">Каталог</button>
-                <button class="btn btn-link btn-block m-0">Контакты</button>
-              </div>
-            </div>
-            </div>
             
+            
+            </div>
             <nav id="nav-sticky" class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-md navbar-expand-sm navbar-expand-xs">
                 <div class="container-fluid">
                   
@@ -101,8 +130,15 @@
                       <button class="btn btn-outline-success" type="submit">Поиск</button>
                     </form>
                   </div>
+
+
+                  
                 </div>
               </nav>
+              
+
+              
+              
             </header>   
               <main>
 
@@ -286,6 +322,8 @@
                   </div>
                   
                 </div>
+
+                
                   
                   <footer class="py-3 my-4">
                     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
