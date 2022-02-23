@@ -458,7 +458,42 @@ section {
     bottom: 0;
     
   }
+  #navbarSupportedContent {
+    background-color: white;
+    
+    
+   height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    margin-top:5px;
+  }
+
+  #navbarSupportedContent li {
+    margin: 10px;
+    padding: 3px;
+    text-align: center;
+  }
+
+  #navbarSupportedContent li a {
+text-decoration: none;
+color: #2A354F;
+font-size: 1.2rem;
+cursor: pointer;
+font-weight: bold;
+transition: 0.2s ease-in-out all; 
+  }
+
+  #navbarSupportedContent li a:hover, #navbarSupportedContent li a:active {
+    color: #3498db;
+    transition: 0.2s ease-in-out all; 
+  }
   
+  #hamburger {
+    color: #2A354F;
+    
+  }
 
 
 

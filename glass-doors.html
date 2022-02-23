@@ -38,7 +38,7 @@
     </head>
     <body id='main'>
       <header class="nav-sticky">
-            <div class='container-fluid'>
+            <div id="mobile-nav" class='container-fluid'>
                 <div class='row'><div class='col-md-1' class='logo' id='logo'>
                     <a href='index.html'>
                         <img src='images/logo.jpg' >
@@ -46,6 +46,12 @@
             </div>
             <div class='col-md-6' id='brand-name'>
                 <h1 class="h1">Стеклострой</h1>
+            </div>
+
+            <div id="xs-hidden"  class="navbar navbar-light light-blue lighten-4">
+              <button id="hamburger" class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
             </div>
             
                     <div class='col' id='phones' style='margin: 5px; padding: 5px;'>
@@ -66,6 +72,24 @@
             </div>
 
             </div>
+            <div class='container-fluid mobile-nav' id="navbarSupportedContent">
+            
+              <!-- Links -->
+              <ul>
+                <li>
+                  <a href="index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="gallery.html">Каталог</a>
+                </li>
+                <li>
+                  <a href="#contacts">Контакты</a>
+                </li>
+              </ul>
+              
+          
+            </div>
+
             <nav id="nav-sticky" class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-md navbar-expand-sm">
                 <div class="container-fluid">
                   
@@ -333,6 +357,21 @@ bar.classList.toggle('sticky', window.scrollY>0);
   
 
   
+});
+
+const mobilenav = document.getElementById('xs-hidden');
+const hamburger = document.getElementById('hamburger');
+const supportedContent = document.getElementById('navbarSupportedContent');
+
+hamburger.addEventListener('click', () => {
+    if(supportedContent.style.display === 'none'){
+        supportedContent.style.display = 'flex';
+    }
+
+    else {
+        supportedContent.style.display = 'none';
+    }
+    
 });
             </script> 
               <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

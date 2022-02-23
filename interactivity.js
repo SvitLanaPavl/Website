@@ -13,15 +13,24 @@ bar.classList.toggle('sticky', window.scrollY>0);
  
     
 });
+const mobilenav = document.getElementById('xs-hidden');
+const hamburger = document.getElementById('hamburger');
+const supportedContent = document.getElementById('navbarSupportedContent');
 
-let galleryImages = document.querySelectorAll('.g-image');
-let getLatestOpenedImage;
-let windowWidth = window.innerWidth;
-if(galleryImages) {
-    galleryImages.forEach(function() {
 
-    })
-}
+hamburger.addEventListener('click', () => {
+    if(supportedContent.style.display === 'none'){
+        supportedContent.style.display = 'flex';
+    }
+
+    else {
+        supportedContent.style.display = 'none';
+    }
+    
+});
+
+
+
 
 function displaySearch () {
     const searchInput = document.getElementById('search-input').value.toLowerCase();

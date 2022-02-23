@@ -167,6 +167,10 @@ object-fit: cover;
         
     }
 
+    #brand-name {
+        margin-left: 10px;
+    }
+
     .fa-instagram {
         
         color: #833AB4;
@@ -359,6 +363,7 @@ max-width: 60px;
 
     #brand-name {
         width: 60%;
+        margin-left: 0px;
     }
 
     #brand-name .h1 {
@@ -385,6 +390,27 @@ max-width: 60px;
   }
 
   @media screen and (max-width: 580px) {
+    #portfolio-flters li a {
+        font-size: 1rem;
+    }
+
+    .section-title {
+       width: 100%;
+    }
+
+    #gallery-content {
+align-items: center;
+justify-content: center;
+    }
+
+    #portfolio-flters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
 
     #logo {
         width: 15%;
@@ -407,6 +433,7 @@ max-width: 60px;
     #xs-hidden {
         display: flex !important;
         width: 10%;
+        right: 10px;
         
     }
 
@@ -419,7 +446,7 @@ max-width: 60px;
     }
 
    #mobile-nav {
-       height: 65px;
+       height: 66px;
        position: sticky;
    }
 
